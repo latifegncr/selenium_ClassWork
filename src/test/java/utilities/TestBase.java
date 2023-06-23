@@ -37,49 +37,49 @@ public abstract class TestBase {
         //driver.quit();
     }
 
-//    //HARD WAIT (Bekleme Methodu)
-//    public void bekle(int saniye){
-//        try {
-//            Thread.sleep(saniye*1000);
-//        } catch (InterruptedException e) {
-//            throw new RuntimeException(e);
-//        }
-//    }
-//
-//    //AcceptAlert
-//    public void acceptAlert(){
-//        driver.switchTo().alert().accept();
-//    }
-//
-//    //DismissAlert
-//    public void dismissAlert(){
-//        driver.switchTo().alert().dismiss();
-//    }
-//    //getTextAlert
-//    public String getTextAlert(){
-//        return driver.switchTo().alert().getText();
-//    }
-//
-//    //sendKeysAlert
-//    public void sendKeysAlert(String text){
-//        driver.switchTo().alert().sendKeys(text);
-//    }
-//
-//    //DropDown VisibleText
-//    public void selectVisibleText(WebElement ddm, String text){
-//        Select select = new Select(ddm);
-//        select.selectByVisibleText(text);
-//    }
-//
-//    //DropDown Index
-//    public void selectIndex(WebElement ddm,int index){
-//        Select select = new Select(ddm);
-//        select.selectByIndex(index);
-//    }
-//
-//    //DropDown Value
-//    public void selectValue(WebElement ddm,String value){
-//        Select select = new Select(ddm);
-//        select.selectByValue(value);
-//    }
+    //HARD WAIT (Bekleme Methodu)
+    public void bekle(int saniye){
+        try {
+            Thread.sleep(saniye*1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    //AcceptAlert
+    public void acceptAlert(){
+        driver.switchTo().alert().accept();
+    }
+
+    //DismissAlert
+    public void dismissAlert(){
+        driver.switchTo().alert().dismiss();
+    }
+    //getTextAlert
+    public String getTextAlert(){
+        return driver.switchTo().alert().getText();
+    }
+
+    //sendKeysAlert
+    public void sendKeysAlert(String text){
+        driver.switchTo().alert().sendKeys(text);
+    }
+
+    //DropDown VisibleText
+    public void selectVisibleText(WebElement ddm, String text){
+        Select select = new Select(ddm);
+        select.selectByVisibleText(text);
+    }
+
+    //DropDown Index
+    public void selectIndex(WebElement ddm,int index){
+        Select select = new Select(ddm);
+        select.selectByIndex(index);
+    }
+
+    //DropDown Value
+    public void selectValue(WebElement ddm,String value){
+        Select select = new Select(ddm);
+        select.selectByValue(value);
+    }
 }

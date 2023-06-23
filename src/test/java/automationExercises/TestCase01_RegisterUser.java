@@ -75,29 +75,30 @@ ddm.sendKeys(Keys.TAB,"May",Keys.TAB,"2023");
 //11. Select checkbox 'Receive special offers from our partners!'
         WebElement checkBox= driver.findElement(By.cssSelector("input#optin"));
         checkBox.click();//
+
 // 12. Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number
-checkBox.sendKeys(Keys.TAB,"TAB",Keys.TAB,"CAN",Keys.TAB,"TAB COMPANY",Keys.TAB,"company",Keys.TAB,"canada",Keys.TAB,"Zipcode",Keys.TAB,"Zipcode",Keys.TAB,"Zipcode4",Keys.TAB,"NUMBER",Keys.TAB,"Mobile Number");
+        checkBox.sendKeys(Keys.TAB,"TAB",Keys.TAB,"CAN",Keys.TAB,"TAB COMPANY",Keys.TAB,"company",Keys.TAB,"canada",Keys.TAB,"Zipcode",Keys.TAB,"Zipcode",Keys.TAB,"Zipcode4",Keys.TAB,"NUMBER",Keys.TAB,"Mobile Number");
 
-//        13. Click 'Create Account button'
-WebElement createdAccount=driver.findElement(By.xpath("//b"));
-Assert.assertTrue(createdAccount.isDisplayed());
+//13. Click 'Create Account button'
+        WebElement createdAccount=driver.findElement(By.xpath("//b"));
+        Assert.assertTrue(createdAccount.isDisplayed());
 
-//        14. Verify that 'ACCOUNT CREATED!' is visible
-
-
-//        15. Click 'Continue' button
+//14. Verify that 'ACCOUNT CREATED!' is visible
 
 
-
-//        16. Verify that 'Logged in as username' is visible
+//15. Click 'Continue' button
 
 
 
-//        17. Click 'Delete Account' button
+//16. Verify that 'Logged in as username' is visible
 
 
 
-//        18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
+//17. Click 'Delete Account' button
+
+
+
+// 18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
 
 
 

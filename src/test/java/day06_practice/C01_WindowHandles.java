@@ -25,7 +25,7 @@ public class C01_WindowHandles extends TestBase {
         driver.get("https://www.n11.com");
 
         String  sayfa1Handle = driver.getWindowHandle();
-        System.out.println("SAYFA1HANDLE: " + sayfa1Handle);
+        System.out.println("SAYFA 1 HANDLE: " + sayfa1Handle);
 
 
 
@@ -35,7 +35,7 @@ public class C01_WindowHandles extends TestBase {
 
 
         // arama motoruna 'Oppo' yazıp aratın
-        driver.findElement(By.xpath("//input[@id='searchData']")).sendKeys("Oppo" + Keys.ENTER);
+        driver.findElement(By.xpath("(//input)[1]")).sendKeys("Oppo" + Keys.ENTER);
 
 
         Thread.sleep(2000);
@@ -96,7 +96,7 @@ public class C01_WindowHandles extends TestBase {
 
 
         String ilkSayfaTitle = driver.getTitle();
-        System.out.println("İLKSAYFATİTLE: " + ilkSayfaTitle);
+        System.out.println("İLK SAYFA TİTLE: " + ilkSayfaTitle);
 
 
 
