@@ -52,12 +52,5 @@ public class C01_Faker extends TestBase {
 
 
 
-
-
-
-
-
-
-
     }
 }
